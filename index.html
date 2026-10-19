@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Joseph Aloys Ratzinger Hasugian - Magang Laksita</title>
+<meta name="description" content="Logbook &amp; dokumentasi magang Joseph Aloys Ratzinger Hasugian di PT Laksita Emi Saguna." />
+<meta name="theme-color" content="#1d1e21" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <nav aria-label="Navigasi utama">
+    <a href="#top" class="nav-link is-active" data-target="top">Beranda</a>
+    <a href="#logbook" class="nav-link" data-target="logbook">Jurnal</a>
+    <a href="#dokumentasi" class="nav-link" data-target="dokumentasi">Dokumentasi</a>
+    <a href="#tentang" class="nav-link" data-target="tentang">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <span class="hero-orb" aria-hidden="true"></span>
+    <div class="hero-logo">
+      <img id="hero-logo" alt="Logo PT Laksita Emi Saguna" style="display: none;" />
+    </div>
+    <div class="hero-body">
+      <p class="hero-kicker">Jurnal magang di</p>
+      <h1 class="hero-title">Laksita Emi Saguna</h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="hero-identity">
+        <span id="profile-name">&nbsp;</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span id="profile-nim">&nbsp;</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span id="profile-program">&nbsp;</span>
+      </p>
+      <p class="hero-desc">
+        Jurnal harian selama magang industri di PT Laksita Emi Saguna, sebuah
+        startup pengembangan perangkat lunak dan konsultan IT di Denpasar.
+      </p>
+    </div>
+  </section>
+
+  <!-- KPI -->
+  <section class="kpi-strip" id="kpi-strip" aria-label="Ringkasan progres magang">
+    <div class="kpi">
+      <span class="kpi-value" id="kpi-entries">0</span>
+      <span class="kpi-label">Minggu tercatat</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi-value" id="kpi-week">—</span>
+      <span class="kpi-label">Minggu magang</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi-value" id="kpi-elapsed">—</span>
+      <span class="kpi-label">Hari terlaksana</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi-value" id="kpi-remaining">—</span>
+      <span class="kpi-label">Hari tersisa</span>
+    </div>
+    <div class="kpi-progress-wrap">
+      <div class="kpi-progress-track">
+        <div class="kpi-progress-fill" id="kpi-progress-fill"></div>
+      </div>
+      <p class="kpi-progress-label" id="kpi-progress-label">0% magang selesai</p>
+    </div>
+  </section>
+
+  <!-- LOGBOOK MINGGUAN -->
+  <section id="logbook" class="section-logbook">
+    <div class="logbook-grid">
+      <div class="logbook-intro">
+        <h2 class="section-title">Jurnal <span class="grad">Mingguan</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="section-note" id="logbook-stats">&nbsp;</p>
+        <p class="section-note">Klik sebuah minggu untuk membaca kegiatannya.</p>
+      </div>
+
+      <div class="weeks" id="entries">
+        <!-- kartu minggu dirender oleh script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DOKUMENTASI -->
+  <section id="dokumentasi" class="section-doc">
+    <div class="doc-head">
+      <div>
+        <h2 class="section-title">Dokumentasi <span class="grad">kegiatan</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div class="doc-controls" id="doc-controls">
+        <button class="doc-btn" id="doc-prev" aria-label="Foto sebelumnya">&larr;</button>
+        <button class="doc-btn" id="doc-next" aria-label="Foto berikutnya">&rarr;</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery" tabindex="0" aria-label="Galeri dokumentasi (geser ke kiri/kanan)">
+      <!-- Tambah foto baru: salin satu blok <figure class="doc-item"> di bawah.
+           Foto tersusun berdampingan kiri-kanan dan bisa digeser. -->
+      <figure class="doc-item">
+        <img src="assets/images/dokumentasi.jpeg" alt="Melakukan testing untuk project Laksita" loading="lazy" />
+        <figcaption class="doc-text">
+          <p class="doc-date">9 September 2026</p>
+          <h3 class="doc-title">Melakukan testing untuk project Laksita</h3>
+        </figcaption>
+      </figure>
+      <figure class="doc-item">
+        <img src="assets/images/dokumentasi2.jpeg" alt="Dosen pembimbing datang ke tempat magang" loading="lazy" />
+        <figcaption class="doc-text">
+          <p class="doc-date">18 September 2026</p>
+          <h3 class="doc-title">Dosen Pembimbing datang ke tempat magang</h3>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="section-about">
+    <div class="about-info">
+      <h2 class="section-title">Tentang <span class="grad">magang</span></h2>
+      <span class="rule" aria-hidden="true"></span>
+      <div class="about-groups" id="about-groups">
+        <!-- profil peserta (kiri) & detail penempatan (kanan) diisi otomatis oleh script.js dari assets/config.js -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="footer-copy">© 2026 Joseph Hasugian Personal Blog · Keep It Up</p>
+</footer>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<script src="assets/config.js"></script>
+<script src="assets/entries.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
